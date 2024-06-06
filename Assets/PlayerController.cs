@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI; 
 
 public class PlayerController : MonoBehaviour
 {
@@ -6,9 +7,6 @@ public class PlayerController : MonoBehaviour
     public Transform holdPoint;
 
     public float tasimaHizi = 1f; 
-
-    public int toplananAnahtarSayisi = 0;
-
     private Rigidbody2D rb;
     private Vector2 hareket;
     private GameObject nesneTut = null;

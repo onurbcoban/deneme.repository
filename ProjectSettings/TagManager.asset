@@ -8,6 +8,7 @@ TagManager:
   - Key
   - Torch
   - Candle
+  - Door
   layers:
   - Default
   - TransparentFX
