@@ -97,6 +97,7 @@ public class PlayerController : MonoBehaviour
             nesneTut.GetComponent<Rigidbody2D>().isKinematic = false;
             nesneTut = null;
             hareketHizi = 1.75f;
+            mesaleTasiyor = false;
         }
     }
 
