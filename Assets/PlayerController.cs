@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 
     public float tasimaHizi = 1f; 
 
-    public Text keyCollectedText;
+    //public Text keyCollectedText;
 
     public int toplananAnahtarSayisi = 0;
 
@@ -102,7 +102,7 @@ public class PlayerController : MonoBehaviour
 
     void TryLightCandle()
 {
-    Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 0.1f);
+    Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 0.2f);
     foreach (Collider2D collider in colliders)
     {
         if (collider.CompareTag("Candle"))
@@ -120,24 +120,24 @@ public class PlayerController : MonoBehaviour
 {
     if (other.CompareTag("Torch"))
     {
-        TakeKey(other.gameObject);
+        TakeTorch(other.gameObject);
     }
 }
 
 
-void TakeKey(GameObject keyObject)
+void TakeTorch(GameObject torchObject)
 {
 
-    keyObject.SetActive(false);
+    torchObject.SetActive(false);
 
  
-    ShowKeyCollectedUI();
+    //ShowKeyCollectedUI();
 }
-void ShowKeyCollectedUI()
+/*void ShowKeyCollectedUI()
 {
 
     toplananAnahtarSayisi++;
     keyCollectedText.text = "Toplanan Anahtar: " + toplananAnahtarSayisi.ToString();
-}
+}*/
 
 }

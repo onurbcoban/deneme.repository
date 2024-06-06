@@ -3,7 +3,7 @@ using UnityEngine;
 public class ChestController : MonoBehaviour
 {
     public BoxChecker[] boxes; 
-    public GameObject key; 
+    public GameObject torch; 
 
     private bool isOpen = false;
 
@@ -32,13 +32,11 @@ public class ChestController : MonoBehaviour
     {
         isOpen = true;
         // Sandığın açılma animasyonunu veya işlemini burada yap
-        Debug.Log("Sandik acildi");
+        Debug.Log("Meşale görünür oldu.");
 
         
-            key.SetActive(true);
+            torch.SetActive(true);
         
 
-        // Örneğin, sandığın sprite'ını değiştirebilir veya bir animasyon oynatabilirsiniz.
-        // chest.GetComponent<SpriteRenderer>().sprite = openChestSprite;
     }
 }
