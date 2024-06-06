@@ -35,7 +35,6 @@ public class CandleController : MonoBehaviour
 
         
             door.SetActive(true);
-        //kapalı kapı objesinin gidip açık kapı objesinin gelmesi ve açık kapı olan yere temas edildiğinde oyunun bitmesi kısmı eksik
 
     }
 

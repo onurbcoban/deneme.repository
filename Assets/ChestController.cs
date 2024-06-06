@@ -31,7 +31,6 @@ public class ChestController : MonoBehaviour
     void OpenChest()
     {
         isOpen = true;
-        // Sandığın açılma animasyonunu veya işlemini burada yap
         Debug.Log("Meşale görünür oldu.");
 
         

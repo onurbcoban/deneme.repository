@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -7,8 +6,6 @@ public class PlayerController : MonoBehaviour
     public Transform holdPoint;
 
     public float tasimaHizi = 1f; 
-
-    //public Text keyCollectedText;
 
     public int toplananAnahtarSayisi = 0;
 
@@ -132,13 +129,6 @@ void TakeTorch(GameObject torchObject)
     torchObject.SetActive(false);
 
  
-    //ShowKeyCollectedUI();
 }
-/*void ShowKeyCollectedUI()
-{
-
-    toplananAnahtarSayisi++;
-    keyCollectedText.text = "Toplanan Anahtar: " + toplananAnahtarSayisi.ToString();
-}*/
 
 }
